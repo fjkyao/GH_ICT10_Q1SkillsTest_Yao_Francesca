@@ -3,32 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"/>
-    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"s></script>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
     <title>Skills Test: Ordering Form</title>
 </head>
 <body>
     <div>
         <h1>Food Ordering System</h1>
     </div>
-    <h3>Menu:</h3>
-    <form>
-    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-    <label for="vehicle1"> I have a bike</label><br>
-    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-    <label for="vehicle2"> I have a car</label><br>
-    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-    <label for="vehicle3"> I have a boat</label><br><br>
-    <input type="submit" value="Submit">
-    </form>
+    <div class="container" id="order">
+    <!-- FOOD ITEMS -->
+        <form>
+            <h3>Menu:</h3>
+            <input type="checkbox" id="item1" name="sbunny" value="menu1">
+            <label for="sbunny">Strawberry Bunny</label><br>
+            <input type="checkbox" id="item2" name="lduck" value="menu2">
+            <label for="lduck">Lemon Duck</label><br>
+            <input type="checkbox" id="item3" name="bseal" value="menu3">
+            <label for="bseal">Blueberry Seal</label><br>
+            <input type="checkbox" id="item4" name="pparakeet" value="menu4">
+            <label for="pparakeet">Pistachio Parakeet</label><br>
+            <input type="checkbox" id="item5" name="cpd" value="menu5">
+            <label for="cpd">Cookies' n Panda Dream</label><br>
+            <input type="checkbox" id="item6" name="cbear" value="menu6">
+            <label for="cbear">Choco Bear</label><br><br>
+        </form>
 
-    <form>
-        <h3>Customer Details:</h3>
-        <input class="form-control" type="text" id="cname" placeholder="enter your name here"/>
-        <input class="form-control" type="text" id="address" placeholder="enter your address here"/>
-        <input class="form-control" type="text" id="Contact Number:" placeholder="enter your number here"/>
-        <br/>
-        <input type="button" value="Place Order"/>
-    </form>
+    <!-- CUSTOMER DETAILS -->
+        <form>
+            <h3>Customer Details:</h3>
+            <input class="form-control" type="text" id="cname" placeholder="enter your name here"/>
+            <input class="form-control" type="text" id="address" placeholder="enter your address here"/>
+            <input class="form-control" type="text" id="contact" placeholder="enter your contact info here"/>
+            <br/>
+            <input type="button" value="Place Order"/>
+        </form>  
+    </div>
+   
 </body>
 </html>
